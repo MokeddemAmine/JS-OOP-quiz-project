@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+button{
+    cursor:pointer;
+}
+/* header Style */
+
+.header-content{
+    background:#333;
+    height:50px;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-content #brand{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    background:-webkit-radial-gradient(50% 50%,circle , gray,#aaa);
+    padding:5px;
+    border-radius:10px;
+    transition:transform 1s;
+}
+.header-content #brand:hover{
+    transform:scale(1.1);
+}
+.header-content nav{
+    flex:0.15;
+}
+.header-content #user{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.header-content #user span{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:#fff;
+    border-radius:50%;
+    line-height:40px;
+    text-align:center;
+    font-size:12px;
+}
+.header-content #user li:last-child{
+    color:#ccc;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Settings section style */
+
+.settings-content,
+.quiz-content,
+.fina-content{
+    background:#eee;
+    padding:50px 50px 10px 50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:300px;
+    width:700px;
+}
+.fina-content{
+    justify-content:center;
+}
+.settings-content h2,.quiz-content h2{
+    text-align:center;
+}
+.settings-content div label:first-child{
+    display:inline-block;
+    width:250px;
+    color:darkgoldenrod;
+    font-weight:bold;
+    font-size:18px;
+}
+.settings-content div button,button{
+    display:block;
+    margin:auto;
+    width:120px;
+    padding:10px;
+    border:none;
+    background:#333;
+    color:#fff;
+    font-size:18px;
+    text-transform:uppercase;
+}
+.settings-content div button:hover,button:hover{
+    opacity:0.8;
+}
